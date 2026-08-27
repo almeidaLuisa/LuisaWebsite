@@ -2,9 +2,10 @@
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(245, 248, 242, 0.85);
+  background: var(--navbar-bg);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--card-border);
+  transition: background-color 0.25s ease, border-color 0.25s ease;
 }
 
 .navbar-inner {

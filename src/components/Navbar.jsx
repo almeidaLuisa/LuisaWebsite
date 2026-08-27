@@ -1,3 +1,4 @@
+import ThemeToggle from './ThemeToggle'
 import './Navbar.css'
 
 const NAV_LINKS = [
@@ -7,7 +8,7 @@ const NAV_LINKS = [
   { label: 'Contact', href: '#contact' },
 ]
 
-function Navbar() {
+function Navbar({ theme, onToggleTheme }) {
   return (
     <header className="navbar">
       <div className="container navbar-inner">
@@ -24,6 +25,7 @@ function Navbar() {
         </nav>
 
         <div className="navbar-actions">
+          <ThemeToggle theme={theme} onToggle={onToggleTheme} />
           <a
             className="btn btn-ghost pixel-corners"
             href="/resume.pdf"

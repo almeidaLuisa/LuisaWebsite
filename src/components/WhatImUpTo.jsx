@@ -6,12 +6,20 @@ const CARDS = [
     body: 'Microprocessor Applications, Digital Design, and Circuits 1 — building toward embedded systems and hardware design.',
   },
   {
-    title: 'Leadership — Program Director, TLDP',
-    body: 'Program Director for TLDP (Aug 2026–Present), leading a team of 15–20 students.',
-  },
-  {
     title: 'Open to Opportunities',
     body: 'F-1 visa holder, CPT-eligible for summer internships, and open to relocating internationally for the right opportunity.',
+  },
+  {
+    title: 'Part-Time Job — Computer Lab Assistant',
+    body: 'Student Government Print Lab, University of Florida. Handle one-on-one tech troubleshooting and equipment operation in a high-traffic facility, ~15 hrs/week.',
+  },
+  {
+    title: 'Languages',
+    body: 'Portuguese (native), English (fluent), Spanish (advanced), Japanese (beginner).',
+  },
+  {
+    title: 'Skills',
+    body: 'VHDL, C#, Godot — more to come.',
   },
 ]
 

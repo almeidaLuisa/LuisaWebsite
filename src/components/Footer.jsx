@@ -8,12 +8,26 @@ function Footer() {
       <div className="container footer-inner">
         <p>© {year} Luisa Almeida Quintella</p>
         <div className="footer-links">
-          {/* TODO: replace with your actual profile URLs */}
-          <a href="#" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.linkedin.com/in/lu%C3%ADsa-almeida-quintella-975706232/"
+            target="_blank"
+            rel="noreferrer"
+          >
             LinkedIn
           </a>
-          <a href="#" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/almeidaLuisa"
+            target="_blank"
+            rel="noreferrer"
+          >
             GitHub
+          </a>
+          <a
+            href="https://devpost.com/almeidaLuisa"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Devpost
           </a>
         </div>
       </div>
