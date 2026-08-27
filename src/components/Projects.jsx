@@ -1,17 +1,18 @@
 import { useState } from 'react'
+import familiarMart from '../assets/familiar-mart.jpg'
 import horsesHomepage from '../assets/horses-homepage.jpg'
 import worldwideInternships from '../assets/worldwide-internships.jpg'
 import './Projects.css'
 
 const PROJECTS = [
   {
-    title: 'Familiar Places',
+    title: 'FamiliarMart',
     tags: ['Godot 4.6.3', 'C#', '.NET'],
-    image: null,
+    image: familiarMart,
     summary: 'A Japanese-learning game built during study abroad in Kyoto.',
     description:
       'Built as lead developer with a 4-person team during study abroad in Kyoto: a first-person 2.5D cashier simulator that teaches Japanese through gameplay. Owned the player controller, UI, and dialogue systems, and coordinated the team’s Git workflow. Implemented keyboard-driven dialogue validation — LineEdit focus handling, Enter-to-submit, and full-width Japanese punctuation normalization for accurate matching — and migrated the codebase from GDScript to C#.',
-    github: '#',
+    github: 'https://github.com/matilde-gillia/Familiar_Mart',
   },
   {
     title: 'Worldwide Internships',
@@ -31,7 +32,7 @@ const PROJECTS = [
     summary: 'Hackathon project for a horse retirement sanctuary — won a MongoDB award.',
     description:
       'Built a full-stack website for the Retirement Home for Horses, a local nonprofit, at the Code for Change 2026 hackathon as part of a 4-person team — led frontend development and deployment setup on Render, and won Best Use of MongoDB. Continued on as the sole developer post-hackathon, maintaining and enhancing the site with Python (Flask), MongoDB, and HTML/CSS, managing the full development lifecycle on GitHub with organized branching, pull requests, and automatic preview deployments, and staying in ongoing contact with the nonprofit on feature requests and fixes.',
-    github: '#',
+    github: 'https://github.com/almeidaLuisa/Horse_Retirement_Alachua',
   },
 ]
 

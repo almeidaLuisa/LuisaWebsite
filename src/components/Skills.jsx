@@ -2,12 +2,12 @@ import './Skills.css'
 
 const CARDS = [
   {
-    title: 'Languages',
+    title: 'Spoken Languages',
     body: 'Portuguese (native), English (fluent), Spanish (advanced), Japanese (beginner).',
   },
   {
     title: 'Skills',
-    body: 'VHDL, C#, Godot — more to come.',
+    body: 'Languages: VHDL, C++, C#, Python, Kotlin, HTML/CSS, MATLAB. Tools & Technologies: Altera/Intel Quartus, Git/GitHub, Arduino, Godot, Android Studio, SolidWorks, MongoDB, Linux. Concepts: digital logic design, hardware/software integration, embedded control, servo actuation.',
   },
 ]
 
