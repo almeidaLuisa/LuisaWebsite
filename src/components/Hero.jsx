@@ -1,4 +1,5 @@
 import WaveDivider from './WaveDivider'
+import headshot from '../assets/headshot.jpg'
 import './Hero.css'
 
 function Hero() {
@@ -12,9 +13,9 @@ function Hero() {
           <p className="hero-eyebrow pixel-corners">
             Computer Engineering Student
           </p>
-          <h1>
-            Welcome, I'm Luisa{' '}
-            <span className="accent-text">Almeida Quintella</span>
+          <p className="hero-greeting">Welcome, I'm</p>
+          <h1 className="hero-name">
+            Luisa <span className="accent-text">Almeida Quintella</span>
           </h1>
           <p className="hero-subline">
             University of Florida, expected graduation May 2028. Studied
@@ -39,7 +40,11 @@ function Hero() {
 
         <div className="hero-photo hero-enter hero-enter-delay">
           <div className="hero-photo-ring">
-            <div className="hero-photo-placeholder">Photo</div>
+            <img
+              className="hero-photo-img"
+              src={headshot}
+              alt="Luisa Almeida Quintella"
+            />
           </div>
         </div>
       </div>

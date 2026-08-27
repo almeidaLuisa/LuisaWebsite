@@ -85,7 +85,15 @@
   margin-bottom: 22px;
 }
 
-.hero-text h1 {
+.hero-greeting {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--text-dim);
+  margin-bottom: 6px;
+}
+
+.hero-name {
+  font-size: 56px;
   margin-bottom: 22px;
 }
 
@@ -124,18 +132,13 @@
   box-shadow: 0 20px 60px -20px var(--accent-glow);
 }
 
-.hero-photo-placeholder {
+.hero-photo-img {
+  display: block;
   width: 280px;
   height: 280px;
   border-radius: var(--radius);
-  background: var(--card);
   border: 1px solid var(--card-border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-dim);
-  font-size: 15px;
-  font-weight: 500;
+  object-fit: cover;
 }
 
 @media (max-width: 900px) {
@@ -151,7 +154,10 @@
   .hero-cta {
     justify-content: center;
   }
-  .hero-photo-placeholder {
+  .hero-name {
+    font-size: 38px;
+  }
+  .hero-photo-img {
     width: 200px;
     height: 200px;
   }

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './Contact.css'
 
-const CONTACT_EMAIL = 'your-email@example.com'
+const CONTACT_EMAIL = 'luisa.almeidaqui@ufl.edu'
 
 function Contact() {
   const [name, setName] = useState('')
