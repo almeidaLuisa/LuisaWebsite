@@ -108,6 +108,12 @@ Any static host works since `npm run build` produces a self-contained `dist/` fo
 - Build with `npm run build`, then deploy the `dist/` folder (e.g. via the `gh-pages` package or
   a GitHub Actions workflow) to the `gh-pages` branch.
 
+**Render**
+- A [`render.yaml`](render.yaml) blueprint is included: build command `npm install && npm run
+  build`, publish directory `dist`.
+- In the Render dashboard: New → Static Site → connect this GitHub repo → Render reads
+  `render.yaml` automatically. Every push to `main` auto-redeploys.
+
 ## License
 
 Personal project — content and design are original work; not licensed for reuse.
