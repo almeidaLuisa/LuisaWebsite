@@ -1,22 +1,74 @@
 .hero {
-  padding: 96px 0;
-  background: radial-gradient(
-    circle at 80% 20%,
-    var(--bg-elevated) 0%,
-    var(--bg) 60%
-  );
+  position: relative;
+  padding: 110px 0 0;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.hero-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-glow-accent {
+  width: 480px;
+  height: 480px;
+  top: -160px;
+  right: -120px;
+  background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+  opacity: 0.28;
+}
+
+.hero-glow-gold {
+  width: 360px;
+  height: 360px;
+  bottom: -140px;
+  left: -100px;
+  background: radial-gradient(circle, var(--gold) 0%, transparent 70%);
+  opacity: 0.14;
 }
 
 .hero-inner {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 64px;
+  padding-bottom: 90px;
 }
 
 .hero-text {
   flex: 1 1 520px;
   max-width: 620px;
+}
+
+@keyframes hero-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-enter {
+  animation: hero-in 0.7s ease both;
+}
+
+.hero-enter-delay {
+  animation-delay: 0.15s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-enter {
+    animation: none;
+  }
 }
 
 .hero-eyebrow {
@@ -30,21 +82,25 @@
   background: var(--card);
   border: 1px solid var(--card-border);
   padding: 8px 14px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .hero-text h1 {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
-.accent {
-  color: var(--accent);
+.accent-text {
+  background: linear-gradient(120deg, var(--accent-hover), var(--gold));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .hero-subline {
-  font-size: 17px;
-  line-height: 1.6;
-  margin-bottom: 32px;
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--text);
+  margin-bottom: 36px;
 }
 
 .hero-cta {
@@ -61,6 +117,13 @@
   flex: 0 0 auto;
 }
 
+.hero-photo-ring {
+  padding: 6px;
+  border-radius: calc(var(--radius) + 6px);
+  background: linear-gradient(135deg, var(--accent), var(--gold));
+  box-shadow: 0 20px 60px -20px var(--accent-glow);
+}
+
 .hero-photo-placeholder {
   width: 280px;
   height: 280px;
@@ -73,17 +136,17 @@
   color: var(--text-dim);
   font-size: 15px;
   font-weight: 500;
-  box-shadow: var(--shadow);
 }
 
 @media (max-width: 900px) {
   .hero {
-    padding: 64px 0;
+    padding: 72px 0 0;
   }
   .hero-inner {
     flex-direction: column-reverse;
     text-align: center;
     gap: 40px;
+    padding-bottom: 60px;
   }
   .hero-cta {
     justify-content: center;

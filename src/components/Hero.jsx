@@ -1,16 +1,20 @@
+import WaveDivider from './WaveDivider'
 import './Hero.css'
 
 function Hero() {
   return (
     <section id="home" className="hero">
+      <div className="hero-glow hero-glow-accent" aria-hidden="true" />
+      <div className="hero-glow hero-glow-gold" aria-hidden="true" />
+
       <div className="container hero-inner">
-        <div className="hero-text">
+        <div className="hero-text hero-enter">
           <p className="hero-eyebrow pixel-corners">
             Computer Engineering Student
           </p>
           <h1>
             Welcome, I'm Luisa{' '}
-            <span className="accent">Almeida Quintella</span>
+            <span className="accent-text">Almeida Quintella</span>
           </h1>
           <p className="hero-subline">
             University of Florida, expected graduation May 2028. Studied
@@ -33,10 +37,14 @@ function Hero() {
           </div>
         </div>
 
-        <div className="hero-photo">
-          <div className="hero-photo-placeholder">Photo</div>
+        <div className="hero-photo hero-enter hero-enter-delay">
+          <div className="hero-photo-ring">
+            <div className="hero-photo-placeholder">Photo</div>
+          </div>
         </div>
       </div>
+
+      <WaveDivider color="var(--bg-elevated)" />
     </section>
   )
 }

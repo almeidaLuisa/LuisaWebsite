@@ -13,24 +13,6 @@
   gap: 24px;
 }
 
-.card {
-  background: var(--card);
-  border: 1px solid var(--card-border);
-  border-radius: var(--radius);
-  padding: 28px;
-  box-shadow: var(--shadow);
-}
-
-.card h3 {
-  font-size: 18px;
-  margin-bottom: 12px;
-}
-
-.card p {
-  font-size: 15px;
-  line-height: 1.6;
-}
-
 @media (max-width: 900px) {
   .up-to-grid {
     grid-template-columns: 1fr;
