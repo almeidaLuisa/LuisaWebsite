@@ -1,4 +1,4 @@
-# Luisa [Last Name] — Personal Portfolio
+# Luisa's Personal Portfolio
 
 A one-page personal portfolio site built to signal to employers — especially in hardware / FPGA
 recruiting — that I'm a Computer Engineering student open to internships, including
