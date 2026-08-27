@@ -26,7 +26,7 @@ const PROJECTS = [
     live: 'https://worldwide-internships-lkya.onrender.com/',
   },
   {
-    title: 'Horses',
+    title: 'Retirement Home for Horses',
     tags: ['Hackathon', 'Flask', 'MongoDB'],
     image: horsesHomepage,
     summary: 'Hackathon project for a horse retirement sanctuary — won a MongoDB award.',
