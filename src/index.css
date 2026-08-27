@@ -1,0 +1,100 @@
+:root {
+  --bg: #0a1410;
+  --bg-elevated: #0f1f18;
+  --card: #122a20;
+  --card-border: #1e4234;
+  --text: #dce7e0;
+  --text-dim: #8fa89b;
+  --text-h: #f4faf6;
+  --accent: #4fd868;
+  --accent-hover: #6ee684;
+  --accent-text: #06170d;
+  --gold: #e0b84b;
+
+  --radius: 14px;
+  --radius-sm: 8px;
+  --shadow: rgba(0, 0, 0, 0.35) 0 10px 30px -10px;
+
+  --sans: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
+
+  color-scheme: dark;
+  color: var(--text);
+  background: var(--bg);
+  font: 16px/1.55 var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--sans);
+  font-weight: 600;
+  color: var(--text-h);
+  margin: 0;
+}
+
+h1 {
+  font-size: 48px;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 32px;
+  letter-spacing: -0.4px;
+}
+
+p {
+  margin: 0;
+  color: var(--text-dim);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+button {
+  font-family: var(--sans);
+}
+
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 34px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .container {
+    padding: 0 20px;
+  }
+}
