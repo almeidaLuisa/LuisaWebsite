@@ -2,7 +2,7 @@
 
 A one-page personal portfolio site built to signal to employers — especially in hardware / FPGA
 recruiting — that I'm a Computer Engineering student open to internships, including
-international opportunities. Dark, green-forward visual identity with clean typography and a
+international opportunities. Light, green-forward visual identity with clean typography and a
 minimal, dependency-light stack.
 
 **Live site:** _add your deployed URL here once live_
@@ -39,11 +39,16 @@ LuisaWebsite/
 
 ## Design direction
 
-- **Dark theme**, deep forest/emerald green backgrounds and cards
-- **Kelly/lime green** as the accent color for links, buttons, and highlights
-- A small **warm gold** touch used sparingly (e.g. the hero eyebrow text) — a subtle nod to a
-  Brazilian palette without literal flag imagery
-- Clean sans-serif type, generous whitespace, soft rounded corners on cards and buttons
+- **Light theme**, pale sage-tinted background (not stark white) with white cards lifted by soft
+  shadows rather than borders
+- **Forest/emerald green** as the primary accent for buttons, links, nav highlights, and the name
+  highlight in the hero; a brighter **kelly/lime green** reserved for hover states and small pop
+  accents
+- A small **warm gold** touch used sparingly (badge text, part of the name's gradient) — a subtle
+  nod to a Brazilian palette without literal flag imagery
+- A retro pixel font and stepped "8-bit" corners used sparingly on buttons, badges, and tags for a
+  bit of personality without undercutting the professional read
+- Clean sans-serif type (Inter), generous whitespace, soft rounded corners on cards and buttons
 - Professional-first: this needs to read well to hardware recruiters, personal flair is secondary
 
 Theme tokens live in [`src/index.css`](src/index.css) as CSS custom properties (`--bg`, `--card`,
@@ -53,10 +58,10 @@ Theme tokens live in [`src/index.css`](src/index.css) as CSS custom properties (
 
 | Section | Status | Notes |
 |---|---|---|
-| Hero | ✅ built | Name, university/study-abroad summary, internship availability, photo placeholder, CTAs |
-| What I'm up to | 🚧 planned | Coursework, leadership (TLDP), visa/relocation availability |
-| Projects | 🚧 planned | Familiar Places (Godot/C#), CPU project (VHDL/DE10), Horses (hackathon) |
-| Contact | 🚧 planned | See privacy notes below — no custom backend, no data storage |
+| Hero | ✅ built | Name, university/study-abroad summary, internship availability, real headshot, CTAs |
+| What I'm up to | ✅ built | Coursework, leadership (TLDP), visa/relocation availability |
+| Projects | ✅ built | Familiar Places (Godot/C#), Worldwide Internships (personal tracker), Horses (hackathon) — each expands to a full write-up with GitHub/live links |
+| Contact | ✅ built | See privacy notes below — no custom backend, no data storage |
 
 ## Getting started
 
@@ -71,11 +76,15 @@ Requires Node 20+.
 
 ## Adding your own content
 
-- **Photo:** drop your image into `src/assets/` and swap it into `Hero.jsx` in place of the
-  placeholder box.
-- **Resume:** add `resume.pdf` to the `public/` directory — the Navbar and Hero buttons already
-  link to `/resume.pdf`.
-- **Project screenshots:** add images under `src/assets/` once the Projects section is built.
+- **Photo:** drop an image into `src/assets/` and import it in `Hero.jsx` (already wired up with
+  the current headshot).
+- **Resume:** `public/resume.pdf` is already in place and linked from the Navbar and Hero buttons —
+  replace the file to update it, no code changes needed.
+- **Project screenshots:** add images under `src/assets/`, import them in `Projects.jsx`, and set
+  the `image` field on the relevant project entry (`null` shows the placeholder box instead).
+- **Project links:** each project entry in `Projects.jsx` has a `github` field and an optional
+  `live` field — set `live` to show a "Live Site" link alongside "GitHub Repo" in the expanded
+  view.
 
 ## Privacy & data handling
 

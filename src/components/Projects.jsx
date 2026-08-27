@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import horsesHomepage from '../assets/horses-homepage.jpg'
+import worldwideInternships from '../assets/worldwide-internships.jpg'
 import './Projects.css'
 
 const PROJECTS = [
@@ -13,13 +14,15 @@ const PROJECTS = [
     github: '#',
   },
   {
-    title: 'CPU Project',
-    tags: ['Quartus', 'DE10', 'VHDL'],
-    image: null,
-    summary: 'A CPU built and tested on a DE10 development board.',
+    title: 'Worldwide Internships',
+    tags: ['Web App', 'Render'],
+    image: worldwideInternships,
+    summary:
+      'A personal tracker for computer engineering internships outside the US.',
     description:
-      'TODO: add how/why this project got started and what it actually does — swap this placeholder once details are ready.',
-    github: '#',
+      'Built to organize my own search for hardware/CpE internships abroad — a running, editable table of companies outside the US with a track record of hiring international students, filtered by target regions and citizenship/visa eligibility. Every cell is editable in place, with edits, statuses, and added rows autosaved in the browser, plus CSV export for backing up the list.',
+    github: 'https://github.com/almeidaLuisa/Worldwide_Internships.git',
+    live: 'https://worldwide-internships-lkya.onrender.com/',
   },
   {
     title: 'Horses',
@@ -63,6 +66,11 @@ function ProjectCard({ project }) {
             <a href={project.github} target="_blank" rel="noreferrer">
               GitHub Repo
             </a>
+            {project.live && (
+              <a href={project.live} target="_blank" rel="noreferrer">
+                Live Site
+              </a>
+            )}
           </div>
         </div>
       )}

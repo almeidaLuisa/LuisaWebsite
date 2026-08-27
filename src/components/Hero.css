@@ -19,7 +19,7 @@
   top: -160px;
   right: -120px;
   background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
-  opacity: 0.28;
+  opacity: 0.16;
 }
 
 .hero-glow-gold {
@@ -28,7 +28,7 @@
   bottom: -140px;
   left: -100px;
   background: radial-gradient(circle, var(--gold) 0%, transparent 70%);
-  opacity: 0.14;
+  opacity: 0.08;
 }
 
 .hero-inner {

@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(20, 22, 29, 0.85);
+  background: rgba(245, 248, 242, 0.85);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--card-border);
 }
@@ -90,14 +90,16 @@
 }
 
 .btn-ghost {
-  color: var(--text);
-  border: 1px solid var(--card-border);
+  background: transparent;
+  color: var(--accent);
+  border: 1.5px solid var(--accent);
 }
 
 .btn-ghost:hover {
   transform: translateY(-2px) scale(1.02);
-  border-color: var(--accent);
-  color: var(--text-h);
+  background: var(--bg-elevated);
+  border-color: var(--accent-hover);
+  color: var(--accent-hover);
 }
 
 @media (max-width: 768px) {
