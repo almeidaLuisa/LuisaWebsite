@@ -5,7 +5,7 @@ recruiting — that I'm a Computer Engineering student open to internships, incl
 international opportunities. Light, green-forward visual identity with clean typography and a
 minimal, dependency-light stack.
 
-**Live site:** _add your deployed URL here once live_
+**Live site:** https://luisawebsite.onrender.com/
 
 ---
 
