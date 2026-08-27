@@ -13,14 +13,6 @@ const CARDS = [
     title: 'Part-Time Job — Computer Lab Assistant',
     body: 'Student Government Print Lab, University of Florida. Handle one-on-one tech troubleshooting and equipment operation in a high-traffic facility, ~15 hrs/week.',
   },
-  {
-    title: 'Languages',
-    body: 'Portuguese (native), English (fluent), Spanish (advanced), Japanese (beginner).',
-  },
-  {
-    title: 'Skills',
-    body: 'VHDL, C#, Godot — more to come.',
-  },
 ]
 
 function WhatImUpTo() {
