@@ -12,7 +12,7 @@ function Navbar() {
     <header className="navbar">
       <div className="container navbar-inner">
         <a href="#home" className="navbar-logo">
-          Luisa
+          L.A.Q.
         </a>
 
         <nav className="navbar-links">
@@ -25,14 +25,14 @@ function Navbar() {
 
         <div className="navbar-actions">
           <a
-            className="btn btn-ghost"
+            className="btn btn-ghost pixel-corners"
             href="/resume.pdf"
             target="_blank"
             rel="noreferrer"
           >
             Resume
           </a>
-          <a className="btn btn-primary" href="#contact">
+          <a className="btn btn-primary pixel-corners" href="#contact">
             Contact
           </a>
         </div>

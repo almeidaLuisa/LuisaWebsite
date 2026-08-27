@@ -34,7 +34,7 @@ function ProjectCard({ project }) {
       <h3>{project.title}</h3>
       <div className="project-tags">
         {project.tags.map((tag) => (
-          <span className="project-tag" key={tag}>
+          <span className="project-tag pixel-corners" key={tag}>
             {tag}
           </span>
         ))}

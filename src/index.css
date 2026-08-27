@@ -1,21 +1,33 @@
 :root {
-  --bg: #0a1410;
-  --bg-elevated: #0f1f18;
-  --card: #122a20;
-  --card-border: #1e4234;
-  --text: #dce7e0;
-  --text-dim: #8fa89b;
-  --text-h: #f4faf6;
-  --accent: #4fd868;
-  --accent-hover: #6ee684;
-  --accent-text: #06170d;
-  --gold: #e0b84b;
+  /* deep navy-charcoal, evening-in-Rio base */
+  --bg: #14161d;
+  --bg-elevated: #1b1e29;
+  --card: #1f2330;
+  --card-border: #2c3142;
+  --text: #d7dae2;
+  --text-dim: #8b91a3;
+  --text-h: #f4f6fa;
+
+  /* sunset terracotta - primary accent */
+  --accent: #e8794f;
+  --accent-hover: #f3936c;
+  --accent-text: #1a0f08;
+
+  /* UF blue - secondary accent */
+  --blue: #5f8fc2;
+  --blue-bg: rgba(95, 143, 194, 0.14);
+
+  /* sandy gold + muted green - sparing supporting colors */
+  --gold: #d8b26a;
+  --green: #6f9b7a;
+  --green-bg: rgba(111, 155, 122, 0.14);
 
   --radius: 14px;
   --radius-sm: 8px;
-  --shadow: rgba(0, 0, 0, 0.35) 0 10px 30px -10px;
+  --shadow: rgba(0, 0, 0, 0.4) 0 10px 30px -10px;
 
   --sans: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --pixel: 'Press Start 2P', ui-monospace, monospace;
 
   color-scheme: dark;
   color: var(--text);
@@ -85,6 +97,25 @@ button {
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 32px;
+}
+
+/* stepped, 8-bit-style corners for small pixel-art accents */
+.pixel-corners {
+  clip-path: polygon(
+    0 8px,
+    8px 8px,
+    8px 0,
+    calc(100% - 8px) 0,
+    calc(100% - 8px) 8px,
+    100% 8px,
+    100% calc(100% - 8px),
+    calc(100% - 8px) calc(100% - 8px),
+    calc(100% - 8px) 100%,
+    8px 100%,
+    8px calc(100% - 8px),
+    0 calc(100% - 8px)
+  );
+  border-radius: 0 !important;
 }
 
 @media (max-width: 640px) {

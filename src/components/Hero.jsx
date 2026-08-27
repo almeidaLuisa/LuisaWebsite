@@ -5,7 +5,9 @@ function Hero() {
     <section id="home" className="hero">
       <div className="container hero-inner">
         <div className="hero-text">
-          <p className="hero-eyebrow">Computer Engineering Student</p>
+          <p className="hero-eyebrow pixel-corners">
+            Computer Engineering Student
+          </p>
           <h1>
             Welcome, I'm Luisa{' '}
             <span className="accent">Almeida Quintella</span>
@@ -17,11 +19,11 @@ function Hero() {
             US.
           </p>
           <div className="hero-cta">
-            <a className="btn btn-primary" href="#contact">
+            <a className="btn btn-primary pixel-corners" href="#contact">
               Message Me
             </a>
             <a
-              className="btn btn-ghost"
+              className="btn btn-ghost pixel-corners"
               href="/resume.pdf"
               target="_blank"
               rel="noreferrer"

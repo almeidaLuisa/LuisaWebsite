@@ -46,7 +46,7 @@ function Contact() {
             onChange={(e) => setMessage(e.target.value)}
             required
           />
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary pixel-corners">
             Send
           </button>
         </form>
