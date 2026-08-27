@@ -7,7 +7,8 @@ function Hero() {
         <div className="hero-text">
           <p className="hero-eyebrow">Computer Engineering Student</p>
           <h1>
-            Welcome, I'm Luisa <span className="accent">[Last Name]</span>
+            Welcome, I'm Luisa{' '}
+            <span className="accent">Almeida Quintella</span>
           </h1>
           <p className="hero-subline">
             University of Florida, expected graduation May 2028. Studied

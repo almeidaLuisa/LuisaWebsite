@@ -1,0 +1,55 @@
+.contact {
+  padding: 80px 0 100px;
+}
+
+.contact-inner {
+  max-width: 560px;
+  text-align: center;
+}
+
+.contact-subline {
+  margin-top: 12px;
+  margin-bottom: 32px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 15px;
+  resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--text-dim);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.contact-form .btn {
+  align-self: center;
+  padding: 12px 32px;
+  margin-top: 8px;
+}
+
+.contact-note {
+  margin-top: 20px;
+  font-size: 13px;
+}
