@@ -31,7 +31,7 @@ const PROJECTS = [
     image: horsesHomepage,
     summary: 'Hackathon project for a horse retirement sanctuary — won a MongoDB award.',
     description:
-      'Built a full-stack website for the Retirement Home for Horses, a local nonprofit, at the Code for Change 2026 hackathon as part of a 4-person team — led frontend development and deployment setup on Render, and won Best Use of MongoDB. Continued on as the sole developer post-hackathon, maintaining and enhancing the site with Python (Flask), MongoDB, and HTML/CSS, managing the full development lifecycle on GitHub with organized branching, pull requests, and automatic preview deployments, and staying in ongoing contact with the nonprofit on feature requests and fixes.',
+      'Built a full-stack website for the Retirement Home for Horses, a local nonprofit, at the Code for Change 2026 hackathon as part of a 4-person team — led frontend development and deployment setup on Render, and won Best Use of MongoDB (see more on my Devpost page, linked at the bottom of this site). Continued on as the sole developer post-hackathon, maintaining and enhancing the site with Python (Flask), MongoDB, and HTML/CSS, managing the full development lifecycle on GitHub with organized branching, pull requests, and automatic preview deployments, and staying in ongoing contact with the nonprofit on feature requests and fixes.',
     github: 'https://github.com/almeidaLuisa/Horse_Retirement_Alachua',
   },
 ]
