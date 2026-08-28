@@ -11,7 +11,7 @@ function Contact() {
   function handleSubmit(event) {
     event.preventDefault()
     const subject = encodeURIComponent(`Portfolio contact from ${name || 'website visitor'}`)
-    const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`)
+    const body = encodeURIComponent(`${message}\n\nFrom ${name} (${email})`)
     window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`
   }
 
@@ -20,8 +20,8 @@ function Contact() {
       <div className="container contact-inner">
         <h2>Contact</h2>
         <p className="contact-subline">
-          Have a role, project, or question in mind? Send a message below —
-          it opens in your email client and isn't stored anywhere.
+          Have a role, project, or question in mind? Send a message below.
+          It opens in your email client and isn't stored anywhere.
         </p>
 
         <form className="contact-form" onSubmit={handleSubmit}>
@@ -52,7 +52,7 @@ function Contact() {
         </form>
 
         <p className="contact-note">
-          This opens a message in your own email app — nothing typed here is
+          This opens a message in your own email app. Nothing typed here is
           sent to or stored on this site.
         </p>
       </div>

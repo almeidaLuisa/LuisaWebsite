@@ -11,7 +11,7 @@ const PROJECTS = [
     image: familiarMart,
     summary: 'A Japanese-learning game built during study abroad in Kyoto.',
     description:
-      'Built as lead developer with a 4-person team during study abroad in Kyoto: a first-person 2.5D cashier simulator that teaches Japanese through gameplay. Owned the player controller, UI, and dialogue systems, and coordinated the team’s Git workflow. Implemented keyboard-driven dialogue validation — LineEdit focus handling, Enter-to-submit, and full-width Japanese punctuation normalization for accurate matching — and migrated the codebase from GDScript to C#.',
+      'Built as lead developer with a 4-person team during study abroad in Kyoto: a first-person 2.5D cashier simulator that teaches Japanese through gameplay. Owned the player controller, UI, and dialogue systems, and coordinated the team’s Git workflow. Implemented keyboard-driven dialogue validation, including LineEdit focus handling, Enter-to-submit, and full-width Japanese punctuation normalization for accurate matching, and migrated the codebase from GDScript to C#.',
     github: 'https://github.com/matilde-gillia/Familiar_Mart',
   },
   {
@@ -21,7 +21,7 @@ const PROJECTS = [
     summary:
       'A personal tracker for computer engineering internships outside the US.',
     description:
-      'Built to organize my own search for hardware/CpE internships abroad — a running, editable table of companies outside the US with a track record of hiring international students, filtered by target regions and citizenship/visa eligibility. Every cell is editable in place, with edits, statuses, and added rows autosaved in the browser, plus CSV export for backing up the list.',
+      'Built to organize my own search for hardware/CpE internships abroad: a running, editable table of companies outside the US with a track record of hiring international students, filtered by target regions and citizenship/visa eligibility. Every cell is editable in place, with edits, statuses, and added rows autosaved in the browser, plus CSV export for backing up the list.',
     github: 'https://github.com/almeidaLuisa/Worldwide_Internships.git',
     live: 'https://worldwide-internships-lkya.onrender.com/',
   },
@@ -29,10 +29,11 @@ const PROJECTS = [
     title: 'Retirement Home for Horses',
     tags: ['Hackathon', 'Flask', 'MongoDB'],
     image: horsesHomepage,
-    summary: 'Hackathon project for a horse retirement sanctuary — won a MongoDB award.',
+    summary: 'Hackathon project for a horse retirement sanctuary, won Best Use of MongoDB.',
     description:
-      'Built a full-stack website for the Retirement Home for Horses, a local nonprofit, at the Code for Change 2026 hackathon as part of a 4-person team — led frontend development and deployment setup on Render, and won Best Use of MongoDB (see more on my Devpost page, linked at the bottom of this site). Continued on as the sole developer post-hackathon, maintaining and enhancing the site with Python (Flask), MongoDB, and HTML/CSS, managing the full development lifecycle on GitHub with organized branching, pull requests, and automatic preview deployments, and staying in ongoing contact with the nonprofit on feature requests and fixes.',
+      'Built a full-stack website for the Retirement Home for Horses, a local nonprofit, at the Code for Change 2026 hackathon as part of a 4-person team. Led frontend development and deployment setup on Render, and won Best Use of MongoDB (see the Devpost submission below). Continued on as the sole developer post-hackathon, maintaining and enhancing the site with Python (Flask), MongoDB, and HTML/CSS, managing the full development lifecycle on GitHub with organized branching, pull requests, and automatic preview deployments, and staying in ongoing contact with the nonprofit on feature requests and fixes.',
     github: 'https://github.com/almeidaLuisa/Horse_Retirement_Alachua',
+    devpost: 'https://devpost.com/software/idk-tmf2e8',
   },
 ]
 
@@ -70,6 +71,11 @@ function ProjectCard({ project }) {
             {project.live && (
               <a href={project.live} target="_blank" rel="noreferrer">
                 Live Site
+              </a>
+            )}
+            {project.devpost && (
+              <a href={project.devpost} target="_blank" rel="noreferrer">
+                Devpost
               </a>
             )}
           </div>

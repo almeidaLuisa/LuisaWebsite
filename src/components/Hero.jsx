@@ -20,7 +20,7 @@ function Hero() {
           <p className="hero-subline">
             University of Florida, expected graduation May 2028. Studied
             abroad at Kyoto University (Summer 2026, 4.0 GPA). Open to
-            hardware / FPGA internships — including opportunities outside the
+            hardware / FPGA internships, including opportunities outside the
             US.
           </p>
           <div className="hero-cta">
