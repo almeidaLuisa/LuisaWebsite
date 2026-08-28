@@ -1,3 +1,5 @@
+import ufEceLogo from '../assets/uf-ece-logo.png'
+import androidStudioLogo from '../assets/android-studio-logo.png'
 import volleyballLogo from '../assets/shpe-volleyball.png'
 import sgLogo from '../assets/uf-sg-logo.png'
 import openToWorkLogo from '../assets/open-to-work.png'
@@ -8,10 +10,12 @@ const CARDS = [
   {
     title: 'Current Coursework',
     body: 'Microprocessor Applications, Digital Design, and Circuits 1, building toward embedded systems and hardware design.',
+    icon: ufEceLogo,
   },
   {
     title: 'Android Mobile App Director, SHPE',
     body: 'Leading the Android mobile app initiative for SHPE this semester, guiding development and mentoring members building the app.',
+    icon: androidStudioLogo,
   },
   {
     title: 'Open to Opportunities',
