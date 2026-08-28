@@ -18,11 +18,6 @@ const CARDS = [
     icon: androidStudioLogo,
   },
   {
-    title: 'Open to Opportunities',
-    body: 'F-1 visa holder, CPT-eligible for summer internships, and open to relocating internationally for the right opportunity.',
-    icon: openToWorkLogo,
-  },
-  {
     title: 'Part-Time Job: Computer Lab Assistant',
     body: 'Student Government Print Lab, University of Florida. Handle one-on-one tech troubleshooting and equipment operation in a high-traffic facility, ~15 hrs/week.',
     icon: sgLogo,
@@ -76,6 +71,18 @@ function WhatImUpTo() {
     <section id="about" className="up-to">
       <div className="container">
         <h2 className="up-to-heading">What I'm up to</h2>
+
+        <div className="card status-banner">
+          <img className="status-banner-icon" src={openToWorkLogo} alt="" />
+          <div className="status-banner-text">
+            <h3>Open to Opportunities</h3>
+            <p>
+              F-1 visa holder, CPT-eligible for summer internships, and open to
+              relocating internationally for the right opportunity.
+            </p>
+          </div>
+        </div>
+
         <div className="up-to-grid">
           {CARDS.map((card) => (
             <div className="card" key={card.title}>
