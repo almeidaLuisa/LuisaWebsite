@@ -13,7 +13,7 @@ const CARDS = [
   },
   {
     title: 'Android Mobile App Director, SHPE',
-    body: 'Leading the Android mobile app initiative for SHPE this semester, guiding development and mentoring members building the app.',
+    body: "I'll be continuing my work as an Android Mobile App Director for SHPE! I'm looking forward to implementing some exciting new features this Fall and catching up on my Kotlin skills.",
     icon: androidStudioLogo,
   },
   {
