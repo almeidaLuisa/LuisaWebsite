@@ -2,14 +2,13 @@ import ufEceLogo from '../assets/uf-ece-logo.png'
 import androidStudioLogo from '../assets/android-studio-logo.png'
 import volleyballLogo from '../assets/shpe-volleyball.png'
 import sgLogo from '../assets/uf-sg-logo.png'
-import openToWorkLogo from '../assets/open-to-work.png'
 import horsesLogo from '../assets/horses-logo.png'
 import './WhatImUpTo.css'
 
 const CARDS = [
   {
     title: 'Current Coursework',
-    body: 'Microprocessor Applications, Digital Design, and Circuits 1, building toward embedded systems and hardware design.',
+    body: "Microprocessor Applications, Digital Design, and Circuits 1. I'm really excited to gain some direct industry-applicable knowledge this semester with all these high-level classes!",
     icon: ufEceLogo,
   },
   {
@@ -29,7 +28,7 @@ const CARDS = [
   },
   {
     title: 'SHPE Athletics: Co-Rec Volleyball',
-    body: 'Playing co-rec volleyball with the SHPE athletics team in the Fall intramural league on weekends.',
+    body: "In my rare spare time you can find me in the Southwest Volleyball courts this season! I'll be playing the Fall Intramurals with the SHPE Athletics Team :)",
     icon: volleyballLogo,
   },
 ]
@@ -71,18 +70,6 @@ function WhatImUpTo() {
     <section id="about" className="up-to">
       <div className="container">
         <h2 className="up-to-heading">What I'm up to</h2>
-
-        <div className="card status-banner">
-          <img className="status-banner-icon" src={openToWorkLogo} alt="" />
-          <div className="status-banner-text">
-            <h3>Open to Opportunities</h3>
-            <p>
-              F-1 visa holder, CPT-eligible for summer internships, and open to
-              relocating internationally for the right opportunity.
-            </p>
-          </div>
-        </div>
-
         <div className="up-to-grid">
           {CARDS.map((card) => (
             <div className="card" key={card.title}>

@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import Status from './components/Status'
 import WhatImUpTo from './components/WhatImUpTo'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
@@ -14,6 +15,7 @@ function App() {
     <>
       <Navbar theme={theme} onToggleTheme={toggleTheme} />
       <Hero />
+      <Status />
       <WhatImUpTo />
       <Projects />
       <Skills />
