@@ -1,4 +1,7 @@
 import volleyballLogo from '../assets/shpe-volleyball.png'
+import sgLogo from '../assets/uf-sg-logo.png'
+import openToWorkLogo from '../assets/open-to-work.png'
+import horsesLogo from '../assets/horses-logo.png'
 import './WhatImUpTo.css'
 
 const CARDS = [
@@ -13,14 +16,17 @@ const CARDS = [
   {
     title: 'Open to Opportunities',
     body: 'F-1 visa holder, CPT-eligible for summer internships, and open to relocating internationally for the right opportunity.',
+    icon: openToWorkLogo,
   },
   {
     title: 'Part-Time Job: Computer Lab Assistant',
     body: 'Student Government Print Lab, University of Florida. Handle one-on-one tech troubleshooting and equipment operation in a high-traffic facility, ~15 hrs/week.',
+    icon: sgLogo,
   },
   {
     title: 'Retirement Home for Horses (Pro Bono)',
     body: 'Continuing on as the sole developer for a local horse sanctuary’s website on the side, maintaining and improving it pro bono.',
+    icon: horsesLogo,
   },
   {
     title: 'SHPE Athletics: Co-Rec Volleyball',
@@ -48,7 +54,16 @@ const UPCOMING_EVENTS = [
   },
   {
     title: 'SwampHacks',
-    body: 'Preparing for SwampHacks, a hackathon at UF, where I plan to design a hardware project with embedded systems.',
+    body: (
+      <>
+        Preparing for{' '}
+        <a href="https://xii.swamphacks.com/" target="_blank" rel="noreferrer">
+          SwampHacks
+        </a>
+        , a hackathon at UF, where I plan to design a hardware project with
+        embedded systems.
+      </>
+    ),
   },
 ]
 

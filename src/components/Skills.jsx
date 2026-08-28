@@ -7,7 +7,7 @@ const CARDS = [
   },
   {
     title: 'Skills',
-    body: 'Languages: VHDL, C++, C#, Python, Kotlin, HTML/CSS, MATLAB. Tools & Technologies: Altera/Intel Quartus, Git/GitHub, Arduino, Godot, Android Studio, SolidWorks, MongoDB, Linux. Concepts: digital logic design, hardware/software integration, embedded control, servo actuation.',
+    body: 'Languages: VHDL, C++, C#, Python, Kotlin, HTML/CSS, MATLAB. Tools & Technologies: Altera/Intel Quartus, Git/GitHub, Arduino, Godot, Android Studio, SolidWorks, MongoDB, Linux. Concepts: digital logic design, hardware/software integration, embedded control.',
   },
 ]
 

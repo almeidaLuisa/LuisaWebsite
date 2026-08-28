@@ -88,6 +88,9 @@
 .btn-primary:hover {
   transform: translateY(-2px) scale(1.02);
   box-shadow: 0 8px 24px -6px var(--accent-glow);
+  /* keep the label readable: the global a:hover rule would otherwise
+     tint it accent-hover, which is nearly the button's own fill */
+  color: var(--accent-text);
 }
 
 .btn-ghost {
