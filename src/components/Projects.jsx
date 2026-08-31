@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import familiarMart from '../assets/familiar-mart.jpg'
 import horsesHomepage from '../assets/horses-homepage.jpg'
+import printLabProject from '../assets/printLabProject.jpeg'
 import worldwideInternships from '../assets/worldwide-internships.jpg'
 import './Projects.css'
 
@@ -37,38 +38,50 @@ const PROJECTS = [
   },
   {
     title: 'Print Lab Status Monitor',
-    tags: ['VHDL', 'ESP32', 'UART', 'SNMP', 'Quartus'],
-    comingSoon: true,
+    tags: ['PowerShell', 'SNMP', 'VHDL', 'ESP32', 'UART', 'Quartus'],
+    image: printLabProject,
+    inProgress: true,
     summary:
-      'A hardware + networking system to give real-time visibility into printer status and queue length at my job in the Student Government Print Lab, since the printers aren’t connected to or visible from the help desk. Combines an ESP32 for network status polling with a DE10 FPGA for a physical status display, built in VHDL.',
+      'A monitoring system that gives the help desk real-time visibility into printer queues and status at my job in the Student Government Print Lab, where the printers aren’t visible from the desk. A PowerShell service polls the Windows print server for live queue counts, per-job detail, and printer state, with SNMP filling in device-level data for standalone printers. An embedded display layer on an ESP32 and DE10 FPGA is in progress.',
     description: (
       <>
         <p>
           The Print Lab’s printers aren’t visible from the help desk computer,
           making it hard to know if a job printed successfully, how many jobs
           are queued, or if a printer is jammed without physically walking
-          over. This project solves that with a two-part system:
+          over. The working core of the system is a software data layer, with a
+          physical display still in development:
         </p>
         <ul className="project-bullets">
           <li>
-            An ESP32 microcontroller polls each printer’s status over the
-            network using SNMP (a standard protocol supported across printer
-            brands), pulling queue length, print status, and error/jam flags
+            A PowerShell service running on the help desk PC (no admin rights
+            required) polls the Windows print server directly, pulling live
+            queue counts, per-job information, and printer status for every
+            server-managed printer at once
           </li>
           <li>
-            A DE10 FPGA receives this data over UART and drives a physical
-            display at the help desk: a 7-segment display for queue count and
-            status LEDs (green for normal, yellow for jobs queued, red for
-            errors)
+            The poller flags new jobs and errors in real time, with color-coded
+            status and distinct audible alerts — one sound for a new job,
+            another for an error
           </li>
           <li>
-            The UART receiver and display logic are implemented from scratch in
+            SNMP complements this for standalone printers that aren’t on the
+            print server, reporting device status, error/jam flags, and
+            toner/tray levels that the print server doesn’t expose
+          </li>
+          <li>
+            In progress: an ESP32 on wired Ethernet feeding a DE10 FPGA over
+            UART, driving physical status indicators written from scratch in
             VHDL
           </li>
         </ul>
         <p>
-          This project pairs low-level hardware design with practical
-          networking to solve a real problem I encounter at work.
+          The hardest and most interesting part turned out to be the data layer
+          rather than the hardware: the same physical printer shows up under
+          different names and network paths depending on which lab computer you
+          ask, and only jobs routed through the print server are centrally
+          visible. Untangling that mapping is what made a single, accurate view
+          of the lab possible.
         </p>
       </>
     ),
@@ -102,7 +115,7 @@ function ProjectCard({ project }) {
   return (
     <div
       className={`card project-card${
-        project.comingSoon ? ' project-card-upcoming' : ''
+        project.inProgress ? ' project-card-upcoming' : ''
       }`}
     >
       {project.image ? (
@@ -113,11 +126,11 @@ function ProjectCard({ project }) {
         />
       ) : (
         <div className="project-image-placeholder">
-          {project.comingSoon ? <UpcomingGraphic /> : 'Image'}
+          {project.inProgress ? <UpcomingGraphic /> : 'Image'}
         </div>
       )}
-      {project.comingSoon && (
-        <span className="project-badge pixel-corners">Coming Soon</span>
+      {project.inProgress && (
+        <span className="project-badge pixel-corners">In Progress</span>
       )}
       <h3>{project.title}</h3>
       <div className="project-tags">
