@@ -1,16 +1,16 @@
 .projects {
-  padding: 80px 0;
+  padding: 60px 0;
   background: var(--bg-elevated);
 }
 
 .projects-heading {
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 36px;
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
 }
 
