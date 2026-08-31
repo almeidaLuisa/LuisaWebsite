@@ -85,6 +85,7 @@ const PROJECTS = [
         </p>
       </>
     ),
+    github: 'https://github.com/almeidaLuisa/Print_Lab_Solutions',
   },
 ]
 
