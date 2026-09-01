@@ -42,7 +42,7 @@ const PROJECTS = [
     image: printLabProject,
     inProgress: true,
     summary:
-      'A monitoring system that gives the help desk real-time visibility into printer queues and status at my job in the Student Government Print Lab, where the printers aren’t visible from the desk. A PowerShell service polls the Windows print server for live queue counts, per-job detail, and printer state, with SNMP filling in device-level data for standalone printers. An embedded display layer on an ESP32 and DE10 FPGA is in progress.',
+      'A monitoring system that gives the help desk live visibility into printer queues and status at my job in the Student Government Print Lab, where the printers aren’t visible from the desk. A PowerShell service polls the Windows print server for queue counts, job details, and printer state, with SNMP filling in device data for standalone printers. An embedded display layer on an ESP32 and DE10 FPGA is in progress.',
     description: (
       <>
         <p>
@@ -54,14 +54,14 @@ const PROJECTS = [
         </p>
         <ul className="project-bullets">
           <li>
-            A PowerShell service running on the help desk PC (no admin rights
-            required) polls the Windows print server directly, pulling live
-            queue counts, per-job information, and printer status for every
-            server-managed printer at once
+            A PowerShell service running on the help desk PC polls the
+            Windows print server directly, pulling live queue counts, job
+            information, and printer status for every printer the server
+            manages, all at once
           </li>
           <li>
-            The poller flags new jobs and errors in real time, with color-coded
-            status and distinct audible alerts — one sound for a new job,
+            The poller flags new jobs and errors as they happen, with color
+            coded status and distinct audible alerts: one sound for a new job,
             another for an error
           </li>
           <li>
