@@ -3,6 +3,8 @@ import androidStudioLogo from '../assets/android-studio-logo.png'
 import volleyballLogo from '../assets/shpe-volleyball.png'
 import sgLogo from '../assets/uf-sg-logo.png'
 import horsesLogo from '../assets/horses-logo.png'
+import codeForChangeLogo from '../assets/codeForChange.png'
+import ieaLogo from '../assets/IEA.png'
 import './WhatImUpTo.css'
 
 const CARDS = [
@@ -13,11 +15,13 @@ const CARDS = [
   },
   {
     title: 'Marketing Director, Code for Change (SHPE)',
-    body: "Leading marketing, branding, and outreach for SHPE's annual Code for Change hackathon. I'm so excited for this new role — it's a chance to give back to the hackathon that opened up some amazing opportunities for me in the past!",
+    body: "Leading marketing, branding, and outreach for SHPE's annual Code for Change hackathon. I'm so excited for this new role, it's a chance to give back to the hackathon that opened up some amazing opportunities for me in the past!",
+    icon: codeForChangeLogo,
   },
   {
     title: 'International Engineering Ambassador (IEA)',
     body: 'Herbert Wertheim College of Engineering. Supporting incoming international engineering students through orientation, mentorship, and peer advising, and promoting global/study abroad opportunities across the college. So excited to be starting this new role!',
+    icon: ieaLogo,
   },
   {
     title: 'Android Mobile App Director, SHPE',
